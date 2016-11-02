@@ -19,7 +19,7 @@ $cssfile = 		"css/css".$theme.".css";
 
 <html>
 <head>
-<link rel="stylesheet" href="<?php echo "$cssfile"?>"></link>
+<link rel="stylesheet" href="<?php echo $cssfile?>"></link>
 <link rel="stylesheet" href="css/common.css"></link>
 </head>
 <body>
