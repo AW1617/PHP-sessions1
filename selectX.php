@@ -14,7 +14,7 @@ if($activeSession) {
 	// tema por defeito (sem sessão ativa)
     $theme = '0';
 }
-$cssfile = "css".$theme.".css";
+$cssfile = "css/css".$theme.".css";
 session_write_close();
 ?>
 
@@ -23,15 +23,15 @@ session_write_close();
 <meta charset="UTF-8"/>
 <title>BASIC SESSIONS</title>
 <link rel="stylesheet" href="<?php echo $cssfile ?>"></link>
-<link rel="stylesheet" href="common.css"></link>
+<link rel="stylesheet" href="css/common.css"></link>
 </head>
 <body>
 <?php 
 	// se existe uma sessão ativa
 	if ($activeSession) 
-		include('info.inc'); 
+		include('inc/info.inc'); 
 	else 
-		include('form.inc');
+		include('inc/form.inc');
 ?>
 <p class="copy">(c) 2010-2016 pedro moreira</p>
 </body>

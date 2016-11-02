@@ -12,14 +12,14 @@ if(!isset($_SESSION['theme'])) {
 $theme = 		$_SESSION['theme'];
 session_write_close();
 
-$cssfile = 		"css".$theme.".css";
+$cssfile = 		"css/css".$theme.".css";
 
 ?>
 
 <html>
 <head>
-<link rel="stylesheet" href="<?php echo "$cssfile"?>"></link>
-<link rel="stylesheet" href="common.css"></link>
+<link rel="stylesheet" href=<?php echo "$cssfile"?>></link>
+<link rel="stylesheet" href="css/common.css"></link>
 </head>
 <body>
 <h3>page 1</h3>
